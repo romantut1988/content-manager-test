@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test-index_1</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            margin: 50px auto;
+        }
+
+        td {
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        .col-1 {
+            background-color: #006400;
+            width: 30%;
+        }
+
+        .col-2 {
+            width: 20%;
+        }
+
+        .col-3 {
+            width: 40%;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <colgroup>
+            <col class="col-1">
+            <col class="col-2">
+            <col class="col-3">
+        </colgroup>
+        <tr>
+            <td rowspan="2">Test 1</td>
+            <td colspan="2">Test</td>
+        </tr>
+        <tr>
+            <td style="background-color: #FFD700;">Test</td>
+            <td style="background-color: #FFD700;">Test</td>
+        </tr>
+        <tr>
+            <td>Test</td>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td style="background-color: red;">Test</td>
+            <td style="background-color: red;">
+                <span>
+                    1<sub style="font-size: 10px">2</sub>
+                </span>
+            </td>
+            <td>
+                <span>
+                    <sub style="font-size: 10px">2</sub>1
+                    <sub style="font-size: 10px">2</sub>1
+                    <sub style="font-size: 10px">2</sub>1
+                    <sub style="font-size: 10px">2</sub>1
+                </span>
+
+            </td>
+        </tr>
+        <tr>
+            <td>Test</td>
+            <td colspan="2">1</td>
+        </tr>
+    </table>
+</body>
+
+</html>
